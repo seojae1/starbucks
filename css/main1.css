@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    color:#333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'PyeongChangPeace-Bold';
+    
+}
+img{display: block;}
+a{ text-decoration: none;}
+/*Head*/
+#head_layout{
+    background-color: red;
+}
+#head_layout .inner{
+    background-color: aquamarine;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 120px;
+}
+#head_layout h1 .logo{
+
+}
+
+#head_layout h1 .logo img{
+    
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left:0;
+    height: 75px;
+} 
+
+#head_layout .util_menu{
+    display: flex;
+
+}
+
+#head_layout .util_menu ul.menu{
+    display: flex;
+}
+
+#head_layout .util_menu ul.menu li{
+    position: relative;
+    
+}
+
+/* Befroe는 inline이기에 block처리*/
+#head_layout .util_menu ul.menu li:first-child::before {
+ display:none;   
+ /*firstchild는 none처리*/
+    
+}
+#head_layout .util_menu ul.menu li::before{
+    content: '';
+    display:block;
+    width: 1px;
+    height: 12px;
+    background-color:blue;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    
+    
+}
+
+#head_layout .util_menu ul.menu li > a{
+    
+    font-size: 12px;
+    padding: 11px 16px;
+    display: block;
+    color:#656565
+}
+
+#head_layout .util_menu ul.menu li > a:hover{
+    color:#000;
+    
+}
+
+#head_layout .util_menu .search{
+    position:relative;
+    height: 34px;
+}   
+#head_layout .util_menu .search input{
+    border: 1px solid #ccc;
+    width: 36px;
+    height: 34px;
+    padding : 4px 10px;
+    box-sizing: border-box;
+    border-radius:5px;
+    outline:0;
+    color: #bbb ;
+    transition: width 0.5s;
+    font-size:12px;
+    outline:0;
+    
+    
+    
+}   
+#head_layout .util_menu .search input:focus{
+    width: 190px;
+    border-color: #690;
+    
+}
+#head_layout .util_menu .search span{
+    position:absolute;
+    height: 24px;
+    top:0;
+    bottom:0;
+    right: 5px;
+    margin:auto;
+z-index:10;
+}   
